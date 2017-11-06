@@ -10,7 +10,7 @@ import UIKit
 
 class menuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arrCellID:[String] = ["Menu1","Menu2","Menu3","Menu4","Menu4","Menu5", "Menu6"]
+    var arrCellID:[String] = ["Tra cứu luật", "Thi sát hạch", "Cộng đồng", "Đăng nhập", "Liên hệ, góp ý"]
     
     @IBOutlet weak var menuTable: UITableView!
     override func viewDidLoad() {

@@ -1,5 +1,5 @@
 //
-//  Menu2ViewController.swift
+//  HLGTViewController.swift
 //  ATGT
 //
 //  Created by Vu Duc Chung on 06/11/2017.
@@ -8,15 +8,11 @@
 
 import UIKit
 
-class Menu2ViewController: UIViewController {
+class HLGTViewController: UIViewController {
 
-    @IBOutlet weak var btnMenu: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        btnMenu.target = self.revealViewController()
-        btnMenu.action = Selector("revealToggle:")
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         // Do any additional setup after loading the view.
     }
 

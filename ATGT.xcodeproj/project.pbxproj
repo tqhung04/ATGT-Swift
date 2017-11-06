@@ -15,7 +15,9 @@
 		54B20D6E1FB0390E00EF8E74 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B20D6C1FB0390D00EF8E74 /* SWRevealViewController.m */; };
 		54B20D701FB03C1A00EF8E74 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B20D6F1FB03C1A00EF8E74 /* mainViewController.swift */; };
 		54B20D721FB03C2500EF8E74 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B20D711FB03C2500EF8E74 /* menuViewController.swift */; };
-		54B20D741FB0556700EF8E74 /* Menu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B20D731FB0556600EF8E74 /* Menu2ViewController.swift */; };
+		54B20D741FB0556700EF8E74 /* TSHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B20D731FB0556600EF8E74 /* TSHViewController.swift */; };
+		54E04EE01FB0AB0F00AAD1BE /* HLGTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E04EDF1FB0AB0F00AAD1BE /* HLGTViewController.swift */; };
+		54E04EEC1FB0C1EC00AAD1BE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E04EEB1FB0C1EC00AAD1BE /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,9 @@
 		54B20D6D1FB0390D00EF8E74 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		54B20D6F1FB03C1A00EF8E74 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		54B20D711FB03C2500EF8E74 /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
-		54B20D731FB0556600EF8E74 /* Menu2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu2ViewController.swift; sourceTree = "<group>"; };
+		54B20D731FB0556600EF8E74 /* TSHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSHViewController.swift; sourceTree = "<group>"; };
+		54E04EDF1FB0AB0F00AAD1BE /* HLGTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLGTViewController.swift; sourceTree = "<group>"; };
+		54E04EEB1FB0C1EC00AAD1BE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,9 @@
 				54B20D6B1FB0390C00EF8E74 /* ATGT-Bridging-Header.h */,
 				54B20D6F1FB03C1A00EF8E74 /* mainViewController.swift */,
 				54B20D711FB03C2500EF8E74 /* menuViewController.swift */,
-				54B20D731FB0556600EF8E74 /* Menu2ViewController.swift */,
+				54B20D731FB0556600EF8E74 /* TSHViewController.swift */,
+				54E04EDF1FB0AB0F00AAD1BE /* HLGTViewController.swift */,
+				54E04EEB1FB0C1EC00AAD1BE /* CollectionViewCell.swift */,
 			);
 			path = ATGT;
 			sourceTree = "<group>";
@@ -155,10 +161,12 @@
 			files = (
 				548A18C41FB011D200E8729F /* ViewController.swift in Sources */,
 				548A18C21FB011D200E8729F /* AppDelegate.swift in Sources */,
-				54B20D741FB0556700EF8E74 /* Menu2ViewController.swift in Sources */,
+				54E04EEC1FB0C1EC00AAD1BE /* CollectionViewCell.swift in Sources */,
+				54B20D741FB0556700EF8E74 /* TSHViewController.swift in Sources */,
 				54B20D6E1FB0390E00EF8E74 /* SWRevealViewController.m in Sources */,
 				54B20D701FB03C1A00EF8E74 /* mainViewController.swift in Sources */,
 				54B20D721FB03C2500EF8E74 /* menuViewController.swift in Sources */,
+				54E04EE01FB0AB0F00AAD1BE /* HLGTViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
