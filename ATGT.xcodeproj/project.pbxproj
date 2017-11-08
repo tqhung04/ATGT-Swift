@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541172201FB207580075D591 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5411721E1FB207560075D591 /* DLRadioButton.m */; };
+		541172241FB2313F0075D591 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541172231FB2313F0075D591 /* TableViewCell.swift */; };
 		548A18C21FB011D200E8729F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A18C11FB011D200E8729F /* AppDelegate.swift */; };
 		548A18C41FB011D200E8729F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A18C31FB011D200E8729F /* ViewController.swift */; };
 		548A18C71FB011D200E8729F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548A18C51FB011D200E8729F /* Main.storyboard */; };
@@ -16,11 +18,15 @@
 		54B20D701FB03C1A00EF8E74 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B20D6F1FB03C1A00EF8E74 /* mainViewController.swift */; };
 		54B20D721FB03C2500EF8E74 /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B20D711FB03C2500EF8E74 /* menuViewController.swift */; };
 		54B20D741FB0556700EF8E74 /* TSHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B20D731FB0556600EF8E74 /* TSHViewController.swift */; };
+		54BFD1A01FB2E90400BE74D5 /* KQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BFD19F1FB2E90300BE74D5 /* KQViewController.swift */; };
 		54E04EE01FB0AB0F00AAD1BE /* HLGTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E04EDF1FB0AB0F00AAD1BE /* HLGTViewController.swift */; };
 		54E04EEC1FB0C1EC00AAD1BE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E04EEB1FB0C1EC00AAD1BE /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5411721E1FB207560075D591 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
+		5411721F1FB207570075D591 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		541172231FB2313F0075D591 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		548A18BE1FB011D200E8729F /* ATGT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATGT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548A18C11FB011D200E8729F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		548A18C31FB011D200E8729F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +40,7 @@
 		54B20D6F1FB03C1A00EF8E74 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		54B20D711FB03C2500EF8E74 /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
 		54B20D731FB0556600EF8E74 /* TSHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSHViewController.swift; sourceTree = "<group>"; };
+		54BFD19F1FB2E90300BE74D5 /* KQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KQViewController.swift; sourceTree = "<group>"; };
 		54E04EDF1FB0AB0F00AAD1BE /* HLGTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLGTViewController.swift; sourceTree = "<group>"; };
 		54E04EEB1FB0C1EC00AAD1BE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +77,8 @@
 			children = (
 				54B20D6D1FB0390D00EF8E74 /* SWRevealViewController.h */,
 				54B20D6C1FB0390D00EF8E74 /* SWRevealViewController.m */,
+				5411721F1FB207570075D591 /* DLRadioButton.h */,
+				5411721E1FB207560075D591 /* DLRadioButton.m */,
 				548A18C11FB011D200E8729F /* AppDelegate.swift */,
 				548A18C31FB011D200E8729F /* ViewController.swift */,
 				548A18C51FB011D200E8729F /* Main.storyboard */,
@@ -82,6 +91,8 @@
 				54B20D731FB0556600EF8E74 /* TSHViewController.swift */,
 				54E04EDF1FB0AB0F00AAD1BE /* HLGTViewController.swift */,
 				54E04EEB1FB0C1EC00AAD1BE /* CollectionViewCell.swift */,
+				541172231FB2313F0075D591 /* TableViewCell.swift */,
+				54BFD19F1FB2E90300BE74D5 /* KQViewController.swift */,
 			);
 			path = ATGT;
 			sourceTree = "<group>";
@@ -162,7 +173,10 @@
 				548A18C41FB011D200E8729F /* ViewController.swift in Sources */,
 				548A18C21FB011D200E8729F /* AppDelegate.swift in Sources */,
 				54E04EEC1FB0C1EC00AAD1BE /* CollectionViewCell.swift in Sources */,
+				54BFD1A01FB2E90400BE74D5 /* KQViewController.swift in Sources */,
 				54B20D741FB0556700EF8E74 /* TSHViewController.swift in Sources */,
+				541172201FB207580075D591 /* DLRadioButton.m in Sources */,
+				541172241FB2313F0075D591 /* TableViewCell.swift in Sources */,
 				54B20D6E1FB0390E00EF8E74 /* SWRevealViewController.m in Sources */,
 				54B20D701FB03C1A00EF8E74 /* mainViewController.swift in Sources */,
 				54B20D721FB03C2500EF8E74 /* menuViewController.swift in Sources */,

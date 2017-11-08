@@ -8,13 +8,25 @@
 
 import UIKit
 
+struct cellData {
+    let cell: String!
+    let text : String!
+    let image: String!
+}
+
 class menuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    var arrCellID:[String] = ["Tra cứu luật", "Thi sát hạch", "Cộng đồng", "Đăng nhập", "Liên hệ, góp ý"]
-    
+    var arrOfCellData = [cellData]()
+
     @IBOutlet weak var menuTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        arrOfCellData = [cellData(cell : "Cell1", text : "Tra cứu luật", image : "search.png"),
+                         cellData(cell : "Cell2", text : "Thi sát hạch", image : "exam.png"),
+                         cellData(cell : "Cell3", text : "Cộng đồng", image : "community.png"),
+                         cellData(cell : "Cell4", text : "Đăng nhập", image : "login.png"),
+                         cellData(cell : "Cell5", text : "Liên hệ, góp ý", image : "mail.png")
+        ]
         
         menuTable.delegate = self
         menuTable.dataSource = self
@@ -28,16 +40,17 @@ class menuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection
         section: Int) -> Int {
-        return arrCellID.count
+        return arrOfCellData.count
     }
-    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: arrOfCellData[indexPath.row].cell, for: indexPath) as! TableViewCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: arrCellID[indexPath.row], for: indexPath as IndexPath)
-        
-        cell.textLabel?.text = arrCellID[indexPath.row]
-        
+        // Configure the cell...
+        cell.LMLabel.text = arrOfCellData[indexPath.row].text
+        cell.LMImage.image = UIImage(named: arrOfCellData[indexPath.row].image)
         return cell
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

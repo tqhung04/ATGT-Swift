@@ -8,12 +8,56 @@
 
 import UIKit
 
-class HLGTViewController: UIViewController {
+// Biển báo giao thông
+struct BBGTData {
+    let cell: String!
+    let category : String!
+    //let content : MTLStructType!
+    let image : String!
+}
 
+class HLGTViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+    
+    var arrOfBBGT = [BBGTData]()
+    
+    @IBOutlet weak var BBGTTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-    self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        // Do any additional setup after loading the view.
+        
+        // Toggle Menu
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        // Constructor
+        BBGTTableView.delegate = self
+        BBGTTableView.dataSource = self
+        BBGTTableView.separatorStyle = .none
+        
+        // Data Mockup BBGT
+        arrOfBBGT = [
+            BBGTData(cell: "Cell1", category: "Biển báo cấm", image: "bbc.png"),
+            BBGTData(cell: "Cell2", category: "Biển báo hiệu lệnh", image: "bbc.png"),
+            BBGTData(cell: "Cell3", category: "Vạch đường kẻ phụ", image: "bbc.png"),
+            BBGTData(cell: "Cell4", category: "Biển báo phụ", image: "bbc.png"),
+            BBGTData(cell: "Cell5", category: "Biển báo cấm", image: "bbc.png"),
+        ]
+        
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) ->
+        Int {
+            return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection
+        section: Int) -> Int {
+        return arrOfBBGT.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        // Configure the cell...
+        cell.textLabel?.text = arrOfBBGT[indexPath.row].category
+        //cell/LMImage.image = UIImage(named: arrOfBBGT[indexPath.row].image)
+        return cell
     }
 
     override func didReceiveMemoryWarning() {

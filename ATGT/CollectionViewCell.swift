@@ -12,4 +12,9 @@ class  CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var myLabel: UILabel!
     
+    override var isSelected: Bool {
+        didSet {
+            self.contentView.backgroundColor = isSelected ? UIColor.gray : UIColor.white
+        }
+    }
 }
